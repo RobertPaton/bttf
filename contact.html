@@ -1,0 +1,115 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Back to the Future - Contact</title>
+    <meta name="description" content="Back to the Future Official Website">
+    <meta name="author" content="Robert Paton">
+    <link href='http://fonts.googleapis.com/css?family=Voces' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/amazium.css">
+    <!--<link rel="stylesheet" href="css/form.css">-->
+    <link rel="stylesheet" href="css/layout.css">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+</head>
+<body>
+    <header class="row">
+        <h1 class="hidden">Header</h1>
+        <img id="Logo" src="img/bttfLogo.png" alt="Back to the Future Logo">
+        <nav class="grid_7 Nav">
+            <form id="dropNav" name="form1">
+                <select name="jumpmenu" onchange="jumpto(document.form1.jumpmenu.options[document.form1.jumpmenu.options.selectedIndex].value)">
+                    <option>Navigation</option>
+                    <option value=index.html>Home</option>
+                    <option value=about.html>About</option>
+                    <option value=movie1.html>Back to the Future</option>
+                    <option value=characters.html>Characters</option>
+                    <option value=videos.html>Videos</option>
+                    <option value=#>Contact</option>
+                </select>
+            </form>
+            <h1 class="hidden">Navigation</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="movie1.html">Back to the Future</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--Search Bar Start-->
+        <form>
+            <input id="search" type="search" placeholder="Search" />
+        </form>
+        <!--Search Bar End-->
+        <!--Social Meida Start-->
+        <div class="grid_3 offset_9" id="socNetTotal">
+            <ul id="socNet">
+                <li><a id="facebookSprite" href="https://www.facebook.com/bttfseries" target="_blank"></a></li>
+                <li><a id="twitterSprite" href="https://twitter.com/BacktotheFuture" target="_blank"></a></li>
+                <li><a id="youtubeSprite" href="http://www.youtube.com/user/bttfcom?sub_confirmation=1" target="_blank"></a></li>
+                <li><a id="gplusSprite" href="https://plus.google.com/104906634224454271592/posts" target="_blank"></a></li>
+            </ul>
+        </div>
+        <!--Social Media End-->
+    </header>
+
+    <section class="row" id="formMain">
+        <div class="grid_10 offset_1" id="formDiv">
+            <h1>Contact</h1>
+            
+            <form class="form" id="form1">
+                <p class="name">
+                    <input name="name" type="text" class="validatequired[re,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                </p>
+
+                <p class="email">
+                    <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                </p>
+
+                <p class="text">
+                    <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                </p>
+
+                <div class="sumbit">
+                    <input type="submit" value="SEND" id="buttonSub" />
+                    <div class="ease"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="row">
+        <h1 class="hidden">Footer</h1>
+        <div class="grid_12">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="movie1.html">Back to the Future</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h3>Copyright 2014<br />All Rights Reserved</h3>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/css3-mediaqueries.js"></script>
+</body>
+</html>
